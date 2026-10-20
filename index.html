@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>KIT APROVA DETRAN 2026 - 4x de R$ 5,42 ou R$ 19,90 à vista</title>
-  <meta name="description" content="Cansado de Reprovar na CNH? Aprenda os macetes que o Detran não te conta e passe de primeira sem precisar estudar por meses.">
+  <meta name="description" content="Passe na Prova Teórica do Detran de Primeira. Sem precisar decorar apostilas chatas de 200 páginas. Domine os macetes e pegadinhas em menos de 7 dias.">
   
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
@@ -30,8 +30,8 @@
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background-color: #000000;
-      color: #ffffff;
+      background-color: #ffffff;
+      color: #0f172a;
       min-height: 100%;
       padding: 0;
       overflow-x: hidden;
@@ -46,69 +46,91 @@
     .container {
       max-width: 480px;
       margin: 0 auto;
-      background-color: #000000;
+      background-color: #ffffff;
       padding: 20px;
       width: 100%;
       min-height: 100vh;
     }
 
-    /* Top Urgency Bar */
-    .top-urgency-bar {
-      margin: calc(-1 * 20px) calc(-1 * 20px) 0;
-      width: calc(100% + 2 * 20px);
-      background-color: #fad900;
-      color: #000000;
-      padding: 11px 20px;
-      text-align: center;
-      font-weight: 800;
-      font-size: 13px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      letter-spacing: 0.3px;
-    }
-
     .section {
       position: relative;
-      background-color: #000000;
-      padding-top: 36px;
+      background-color: #ffffff;
+      padding-top: 10px;
       padding-bottom: 24px;
       padding-left: 0;
       padding-right: 0;
       width: 100%;
     }
 
+    /* Selo de Validade Nacional DETRAN 2026 */
+    .detran-badge-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+
+    .detran-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      color: #065f46;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 7px 16px;
+      border-radius: 999px;
+      letter-spacing: 0.2px;
+      box-shadow: 0 2px 8px rgba(16, 185, 129, 0.12);
+      text-align: center;
+    }
+
+    .detran-badge-pill strong {
+      color: #059669;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+    }
+
+    .detran-shield-icon {
+      color: #059669;
+      flex-shrink: 0;
+    }
+
     /* Headline & Subtitle */
     .main-heading {
-      color: #ffffff;
-      font-size: 42px;
-      font-weight: 800;
+      color: #0f172a;
+      font-size: 36px;
+      font-weight: 900;
       text-align: center;
-      padding: 0 0 10px;
+      padding: 0 0 12px;
       line-height: 1.15;
       letter-spacing: -0.02em;
       animation: fadeIn 0.6s ease-out forwards;
     }
 
     .highlight-gold {
-      color: #FFD700;
-      text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+      color: #d97706;
+      text-shadow: none;
     }
 
     .sub-heading {
-      color: #ffffff;
-      font-size: 18px;
-      font-weight: 300;
+      color: #475569;
+      font-size: 16px;
+      font-weight: 400;
       text-align: center;
       padding: 0 0 24px;
-      line-height: 1.5;
-      opacity: 0.95;
+      line-height: 1.55;
       animation: fadeIn 0.6s ease-out forwards;
       animation-delay: 0.1s;
     }
 
-    /* Mockup Frame (Substituindo o vídeo) */
+    .sub-heading strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    /* Mockup Frame */
     .mockup-container {
       display: flex;
       justify-content: center;
@@ -121,9 +143,9 @@
       width: 100%;
       border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 0 0 30px rgba(245, 158, 11, 0.2);
-      border: 2px solid rgba(245, 158, 11, 0.4);
-      background: #0a0a0a;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08), 0 2px 8px rgba(15, 23, 42, 0.04);
+      border: 1px solid #e2e8f0;
+      background: #ffffff;
       transition: transform 0.3s ease;
     }
 
@@ -140,13 +162,13 @@
 
     /* Cartão da Oferta - R$ 19,90 */
     .offer-card {
-      background-color: #0a0a0a;
-      color: #ffffff;
+      background-color: #ffffff;
+      color: #0f172a;
       text-align: center;
       padding: 32px 24px;
-      border-radius: 16px;
-      border: 2px solid #F59E0B;
-      box-shadow: 0 4px 25px rgba(245, 158, 11, 0.15);
+      border-radius: 18px;
+      border: 2px solid #f59e0b;
+      box-shadow: 0 8px 30px rgba(245, 158, 11, 0.12), 0 2px 10px rgba(0, 0, 0, 0.04);
       position: relative;
       overflow: hidden;
       margin-bottom: 24px;
@@ -155,10 +177,10 @@
 
     .offer-badge {
       position: absolute;
-      top: 12px;
-      right: 12px;
+      top: 14px;
+      right: 14px;
       background-color: #f59e0b;
-      color: #ffffff;
+      color: #000000;
       padding: 6px 14px;
       border-radius: 8px;
       font-size: 11px;
@@ -166,29 +188,31 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
       z-index: 5;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);
       white-space: nowrap;
     }
 
     .offer-title {
       font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 8px;
-      color: #ffffff;
-      margin-top: 12px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: #0f172a;
+      margin-top: 14px;
     }
 
     .offer-access {
-      font-size: 14px;
-      opacity: 0.75;
-      margin-bottom: 6px;
+      font-size: 13.5px;
+      color: #64748b;
+      margin-bottom: 8px;
+      font-weight: 500;
     }
 
     .offer-price-old {
-      font-size: 20px;
+      font-size: 19px;
       text-decoration: line-through;
-      opacity: 0.5;
+      color: #94a3b8;
       margin-bottom: 4px;
+      font-weight: 500;
     }
 
     .price-value-box {
@@ -205,30 +229,29 @@
     .price-installments-prefix {
       font-size: 24px;
       font-weight: 700;
-      color: #ffffff;
+      color: #0f172a;
       letter-spacing: -0.01em;
     }
 
     .price-value {
       font-size: 52px;
       font-weight: 900;
-      color: #F59E0B;
+      color: #d97706;
       line-height: 1;
       letter-spacing: -0.02em;
     }
 
     .price-cash-info {
       font-size: 15px;
-      font-weight: 600;
-      color: #cbd5e1;
+      font-weight: 700;
+      color: #475569;
       margin-top: 8px;
     }
 
     .offer-divider {
       height: 1px;
-      background-color: #F59E0B;
+      background-color: #e2e8f0;
       margin: 0 -24px 24px;
-      opacity: 0.4;
     }
 
     /* Lista de Benefícios */
@@ -250,7 +273,7 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: #d4a853;
+      background-color: #22c55e;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -259,13 +282,13 @@
     }
 
     .benefit-text {
-      font-size: 15px;
+      font-size: 14.5px;
       line-height: 1.45;
-      color: #ffffff;
+      color: #334155;
     }
 
     .benefit-text strong {
-      color: #FFD700;
+      color: #0f172a;
     }
 
     /* Botão BAIXAR AGORA */
@@ -273,13 +296,13 @@
       display: block;
       width: 100%;
       padding: 18px 24px;
-      background-color: #F59E0B;
-      color: #000000;
+      background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%);
+      color: #ffffff;
       font-size: 18px;
       font-weight: 900;
       text-align: center;
       border-radius: 12px;
-      box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45);
+      box-shadow: 0 4px 18px rgba(34, 197, 94, 0.4);
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 0.5px;
@@ -287,11 +310,11 @@
       border: none;
       cursor: pointer;
       box-sizing: border-box;
-      transition: background-color 0.2s ease, transform 0.1s ease;
+      transition: transform 0.1s ease, filter 0.2s ease;
     }
 
     .btn-checkout:hover {
-      background-color: #ffaa1d;
+      filter: brightness(1.05);
     }
 
     .btn-checkout:active {
@@ -300,12 +323,13 @@
 
     /* Card Garantia */
     .guarantee-card {
-      background-color: #0a0a0a;
+      background-color: #f8fafc;
       padding: 32px 24px;
       border-radius: 16px;
       text-align: center;
       margin-bottom: 24px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
     }
 
     .guarantee-seal-svg {
@@ -316,16 +340,15 @@
     }
 
     .guarantee-title {
-      font-size: 24px;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 12px;
+      font-size: 22px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 10px;
     }
 
     .guarantee-desc {
       font-size: 14px;
-      color: #ffffff;
-      opacity: 0.8;
+      color: #475569;
       margin-bottom: 20px;
       max-width: 400px;
       margin-left: auto;
@@ -345,8 +368,8 @@
       align-items: center;
       gap: 8px;
       font-size: 14px;
-      color: #ffffff;
-      font-weight: 500;
+      color: #1e293b;
+      font-weight: 600;
     }
 
     /* Card WhatsApp */
@@ -355,13 +378,13 @@
       align-items: center;
       justify-content: center;
       gap: 12px;
-      background-color: #ffffff;
-      color: #1a1a2e;
+      background-color: #f0fdf4;
+      color: #14532d;
       padding: 16px 20px;
       border-radius: 12px;
-      border: 2px solid #25D366;
+      border: 1.5px solid #86efac;
       margin-bottom: 32px;
-      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+      box-shadow: 0 4px 15px rgba(34, 197, 94, 0.08);
     }
 
     .whatsapp-icon {
@@ -372,33 +395,33 @@
 
     .whatsapp-text {
       font-size: 14px;
-      font-weight: 600;
-      color: #1a1a2e;
+      font-weight: 700;
+      color: #14532d;
       text-align: left;
     }
 
     /* Seção de Prova Social */
     .proof-heading {
-      color: #ffffff;
+      color: #0f172a;
       font-size: 22px;
-      font-weight: 700;
+      font-weight: 800;
       text-align: center;
       margin-bottom: 20px;
       line-height: 1.35;
     }
 
     .proof-heading span {
-      color: #ffdd01;
+      color: #d97706;
     }
 
     .testimonial-card {
       background-color: #ffffff;
-      color: #1a1a2e;
+      color: #0f172a;
       padding: 20px;
-      border-radius: 12px;
-      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      border: 1px solid #e2e8f0;
       margin-bottom: 16px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
 
     .testimonial-header {
@@ -430,7 +453,7 @@
     .testimonial-name {
       font-weight: 700;
       font-size: 15px;
-      color: #1a1a2e;
+      color: #0f172a;
     }
 
     .stars-row {
@@ -447,39 +470,40 @@
       position: absolute;
       left: -2px;
       top: -2px;
-      opacity: 0.15;
+      opacity: 0.2;
       width: 16px;
       height: 16px;
+      color: #94a3b8;
     }
 
     .testimonial-text {
       font-size: 14px;
-      opacity: 0.9;
       margin: 0;
       padding-left: 18px;
       line-height: 1.5;
-      color: #334155;
+      color: #475569;
     }
 
     /* Seção FAQ */
     .faq-wrapper {
-      background-color: #f8f8f8;
+      background-color: #f8fafc;
       padding: 24px 20px;
       border-radius: 16px;
       margin-bottom: 28px;
-      color: #1a1a1a;
+      border: 1px solid #e2e8f0;
+      color: #0f172a;
     }
 
     .faq-main-title {
       font-size: 22px;
       font-weight: 800;
-      color: #1a1a1a;
+      color: #0f172a;
       margin-bottom: 20px;
       text-align: center;
     }
 
     .faq-item {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      border-bottom: 1px solid #e2e8f0;
     }
 
     .faq-item:last-child {
@@ -500,8 +524,8 @@
 
     .faq-question-text {
       font-size: 15px;
-      font-weight: 600;
-      color: #1a1a1a;
+      font-weight: 700;
+      color: #0f172a;
       padding-right: 12px;
     }
 
@@ -517,7 +541,7 @@
 
     .faq-answer p {
       font-size: 14px;
-      color: #334155;
+      color: #475569;
       line-height: 1.55;
       margin: 0;
     }
@@ -530,9 +554,9 @@
     }
 
     .footer-text {
-      color: #938a8a;
+      color: #64748b;
       font-size: 12px;
-      font-weight: 300;
+      font-weight: 400;
       text-align: center;
       padding: 0 0 8px;
       line-height: 1.5;
@@ -553,11 +577,11 @@
     @keyframes pulseBtn {
       0%, 100% {
         transform: scale(1);
-        box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+        box-shadow: 0 4px 16px rgba(34, 197, 94, 0.35);
       }
       50% {
-        transform: scale(1.03);
-        box-shadow: 0 8px 25px rgba(245, 158, 11, 0.55);
+        transform: scale(1.025);
+        box-shadow: 0 8px 25px rgba(34, 197, 94, 0.55);
       }
     }
 
@@ -571,11 +595,11 @@
       position: fixed;
       bottom: 20px;
       left: 20px;
-      background-color: #22c55e;
+      background-color: #16a34a;
       color: #ffffff;
       padding: 12px 18px;
       border-radius: 8px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.18);
       z-index: 9998;
       display: flex;
       align-items: center;
@@ -586,17 +610,24 @@
     }
 
     @media (max-width: 480px) {
+      .detran-badge-pill {
+        font-size: 11px;
+        padding: 6px 12px;
+        gap: 6px;
+      }
       .main-heading {
-        font-size: 34px;
+        font-size: 30px;
+        line-height: 1.18;
       }
       .sub-heading {
-        font-size: 16px;
+        font-size: 15px;
+        padding-bottom: 18px;
       }
       .price-installments-prefix {
         font-size: 20px;
       }
       .price-value {
-        font-size: 42px;
+        font-size: 44px;
       }
       .price-cash-info {
         font-size: 14px;
@@ -616,12 +647,12 @@
        DOBRA ENXUTA: Tangibilidade & Solução
        ========================================= */
     .product-tangibility-section {
-      background: linear-gradient(180deg, rgba(245, 158, 11, 0.05) 0%, rgba(14, 17, 24, 0.98) 12%, #0a0c12 100%);
-      border: 1.5px solid rgba(245, 158, 11, 0.28);
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
       border-radius: 18px;
-      padding: 18px 16px;
-      margin-bottom: 20px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+      padding: 20px 18px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
       position: relative;
       animation: fadeIn 0.6s ease-out forwards;
     }
@@ -630,9 +661,9 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(245, 158, 11, 0.12);
-      border: 1px solid rgba(245, 158, 11, 0.35);
-      color: #FFD700;
+      background: #fef3c7;
+      border: 1px solid #fde68a;
+      color: #92400e;
       font-size: 10.5px;
       font-weight: 800;
       letter-spacing: 0.5px;
@@ -646,8 +677,8 @@
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background-color: #22c55e;
-      box-shadow: 0 0 6px #22c55e;
+      background-color: #16a34a;
+      box-shadow: 0 0 6px rgba(22, 163, 74, 0.5);
       display: inline-block;
       animation: dotPulse 1.5s infinite;
     }
@@ -660,50 +691,56 @@
     .tangibility-title {
       font-size: 19px;
       font-weight: 800;
-      color: #ffffff;
+      color: #0f172a;
       line-height: 1.25;
       margin-bottom: 4px;
       letter-spacing: -0.01em;
     }
 
+    .tangibility-title .highlight-gold {
+      color: #d97706;
+    }
+
     .tangibility-subtitle {
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.75);
-      line-height: 1.4;
+      font-size: 13.5px;
+      color: #475569;
+      line-height: 1.45;
       margin-bottom: 14px;
     }
 
     .tangibility-subtitle strong {
-      color: #FFD700;
+      color: #0f172a;
     }
 
     /* Grade Enxuta dos 4 Entregáveis */
     .tangible-items-grid {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      margin-bottom: 10px;
+      gap: 10px;
+      margin-bottom: 12px;
     }
 
     .tangible-item-card {
-      background: #10141d;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
       border-radius: 12px;
-      padding: 10px 12px;
+      padding: 12px 14px;
       display: flex;
       align-items: center;
       gap: 12px;
-      transition: border-color 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      transition: border-color 0.2s ease, transform 0.2s ease;
     }
 
     .tangible-item-card:hover {
-      border-color: rgba(245, 158, 11, 0.35);
+      border-color: #cbd5e1;
+      transform: translateY(-1px);
     }
 
     .item-icon-box {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -711,27 +748,27 @@
     }
 
     .item-icon-box.gold {
-      background: rgba(245, 158, 11, 0.15);
-      color: #F59E0B;
-      border: 1px solid rgba(245, 158, 11, 0.3);
+      background: #fef3c7;
+      color: #d97706;
+      border: 1px solid #fde68a;
     }
 
     .item-icon-box.green {
-      background: rgba(34, 197, 94, 0.15);
-      color: #22c55e;
-      border: 1px solid rgba(34, 197, 94, 0.3);
+      background: #dcfce7;
+      color: #16a34a;
+      border: 1px solid #bbf7d0;
     }
 
     .item-icon-box.blue {
-      background: rgba(59, 130, 246, 0.15);
-      color: #60a5fa;
-      border: 1px solid rgba(59, 130, 246, 0.3);
+      background: #dbeafe;
+      color: #2563eb;
+      border: 1px solid #bfdbfe;
     }
 
     .item-icon-box.amber {
-      background: rgba(239, 68, 68, 0.15);
-      color: #f87171;
-      border: 1px solid rgba(239, 68, 68, 0.3);
+      background: #fee2e2;
+      color: #dc2626;
+      border: 1px solid #fecaca;
     }
 
     .item-content {
@@ -740,15 +777,15 @@
     }
 
     .item-title {
-      font-size: 13.5px;
+      font-size: 14px;
       font-weight: 700;
-      color: #ffffff;
+      color: #0f172a;
       line-height: 1.25;
     }
 
     .item-desc {
-      font-size: 11.5px;
-      color: rgba(255, 255, 255, 0.65);
+      font-size: 12px;
+      color: #64748b;
       line-height: 1.35;
       margin-top: 2px;
     }
@@ -764,10 +801,10 @@
     .micro-pill {
       font-size: 11px;
       font-weight: 600;
-      color: rgba(255, 255, 255, 0.85);
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 4px 9px;
+      color: #334155;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      padding: 5px 10px;
       border-radius: 16px;
       display: inline-flex;
       align-items: center;
@@ -775,9 +812,9 @@
     }
 
     .micro-pill.highlight {
-      color: #22c55e;
-      background: rgba(34, 197, 94, 0.1);
-      border-color: rgba(34, 197, 94, 0.3);
+      color: #047857;
+      background: #ecfdf5;
+      border-color: #a7f3d0;
       font-weight: 700;
     }
   </style>
@@ -786,21 +823,27 @@
 
   <div class="container">
     
-    <!-- 1. Barra Superior de Urgência -->
-    <div class="top-urgency-bar">
-      <span>🚨 DESCONTO SÓ HOJE NESSA PÁGINA 🚨</span>
-    </div>
-
     <div class="section">
       
+      <!-- Selo de Validade Nacional DETRAN 2026 -->
+      <div class="detran-badge-container">
+        <div class="detran-badge-pill">
+          <svg class="detran-shield-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="m9 12 2 2 4-4"></path>
+          </svg>
+          <span><strong>ATUALIZADO 2026</strong> • Válido para todos os DETRANs do Brasil</span>
+        </div>
+      </div>
+
       <!-- 2. Título Principal -->
-      <h2 class="main-heading">
-        CANSADO DE <span class="highlight-gold">REPROVAR</span> NA CNH?
-      </h2>
+      <h1 class="main-heading">
+        PASSE NA PROVA TEÓRICA DO DETRAN <span class="highlight-gold">DE PRIMEIRA.</span>
+      </h1>
 
       <!-- 3. Subtítulo -->
       <p class="sub-heading">
-        Aprenda os macetes que o Detran não te conta e passe de primeira sem precisar estudar por meses.
+        Sem precisar decorar apostilas chatas de 200 páginas. Domine os macetes e pegadinhas em <strong>menos de 7 dias</strong>.
       </p>
 
       <!-- 4. Foto do Mockup (no lugar do vídeo conforme solicitado) -->
@@ -980,10 +1023,10 @@
       <!-- 6. Card de Garantia de Satisfação -->
       <div class="guarantee-card">
         <svg class="guarantee-seal-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="45" fill="#18181b" stroke="#F59E0B" stroke-width="3"/>
-          <circle cx="50" cy="50" r="38" fill="#F59E0B" opacity="0.15"/>
+          <circle cx="50" cy="50" r="45" fill="#fef3c7" stroke="#F59E0B" stroke-width="3"/>
+          <circle cx="50" cy="50" r="38" fill="#F59E0B" opacity="0.2"/>
           <path d="M50 18L58 26L69 26L73 37L82 43L80 54L85 64L77 71L75 82L64 83L58 91L50 86L42 91L36 83L25 82L23 71L15 64L20 54L18 43L27 37L31 26L42 26L50 18Z" fill="#F59E0B"/>
-          <circle cx="50" cy="54" r="26" fill="#000000"/>
+          <circle cx="50" cy="54" r="26" fill="#0f172a"/>
           <text x="50" y="52" fill="#F59E0B" font-size="20" font-weight="900" font-family="'Inter', sans-serif" text-anchor="middle">7</text>
           <text x="50" y="64" fill="#ffffff" font-size="8" font-weight="800" font-family="'Inter', sans-serif" text-anchor="middle" letter-spacing="1">DIAS</text>
           <text x="50" y="72" fill="#F59E0B" font-size="6" font-weight="700" font-family="'Inter', sans-serif" text-anchor="middle" letter-spacing="0.5">GARANTIA</text>
@@ -1145,7 +1188,7 @@
         <a href="https://pay.kiwify.com.br/m40aIjk" class="btn-checkout" target="_blank" rel="noopener noreferrer">
           BAIXAR AGORA POR APENAS 4x DE R$ 5,42
         </a>
-        <p style="margin-top: 10px; font-size: 14px; color: #94a3b8; font-weight: 600;">ou R$ 19,90 à vista</p>
+        <p style="margin-top: 10px; font-size: 14px; color: #64748b; font-weight: 600;">ou R$ 19,90 à vista</p>
       </div>
 
       <!-- 11. Rodapé com Direitos e Políticas -->
