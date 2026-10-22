@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="modal-icon">🚗 💨</div>
             <h3 class="modal-title">Kit Aprova Detran 2026</h3>
             <p class="modal-text">
-              Pronto para baixar por apenas <strong>4x de R$ 5,42</strong> ou <strong>R$ 19,90 à vista</strong>!<br>
+              Pronto para baixar por apenas <strong>R$ 10</strong>!<br>
               <small style="color:#94a3b8; display:block; margin-top:8px;">
                 (Para alterar seu link da Kiwify, edite a variável <code>CHECKOUT_URL</code> no arquivo <code>script.js</code>).
               </small>
